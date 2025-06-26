@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "437670709845",
+    "project_id": "ideas-and-concepts-assesment",
+    "storage_bucket": "ideas-and-concepts-assesment.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437670709845:android:374dfebfcaedc8d584e2dc",
+        "android_client_info": {
+          "package_name": "com.example.ideas_and_concepts_assessment_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyDEmld6RM5x5TLu3_vRH4p5iQDk2-jBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

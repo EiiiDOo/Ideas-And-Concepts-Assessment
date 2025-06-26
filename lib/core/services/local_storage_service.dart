@@ -1,5 +1,5 @@
 abstract class LocalStorageService {
-  Future<void> write(String key, String value);
-  String? read(String key);
+  Future<void> writeString(String key, String value);
+  String? readString(String key);
   Future<void> remove(String key);
 }

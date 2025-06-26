@@ -17,4 +17,7 @@ class AppConstants {
   // Storage Keys
   static const localeKey = 'locale';
   static const themeModeKey = 'themeMode';
+  static const user = 'user';
+
+
 }

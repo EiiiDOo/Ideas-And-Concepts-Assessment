@@ -9,12 +9,12 @@ class SharedPrefsService implements LocalStorageService {
   }
 
   @override
-  Future<void> write(String key, String value) async {
+  Future<void> writeString(String key, String value) async {
     await _prefs.setString(key, value);
   }
 
   @override
-  String? read(String key) {
+  String? readString(String key) {
     return _prefs.getString(key);
   }
 

@@ -1,0 +1,22 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ideas-and-concepts-assesment",
+          "appId": "1:437670709845:android:374dfebfcaedc8d584e2dc",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ideas-and-concepts-assesment",
+          "configurations": {
+            "android": "1:437670709845:android:374dfebfcaedc8d584e2dc",
+            "ios": "1:437670709845:ios:dc2de8c21527b9a284e2dc"
+          }
+        }
+      }
+    }
+  }
+}

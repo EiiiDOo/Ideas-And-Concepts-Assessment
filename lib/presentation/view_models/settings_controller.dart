@@ -12,20 +12,20 @@ class SettingsController extends GetxController {
   late final ThemeMode themeMode;
 
   Future<void> init() async {
-    final langCode = storage.read(AppConstants.localeKey);
+    final langCode = storage.readString(AppConstants.localeKey);
     locale = langCode != null
         ? Locale(langCode)
         : Get.deviceLocale ?? AppConstants.defaultLocale;
     // Get.updateLocale(locale);
 
-    final themeStr = storage.read(AppConstants.themeModeKey);
+    final themeStr = storage.readString(AppConstants.themeModeKey);
     themeMode = _parseTheme(themeStr);
     // Get.changeThemeMode(themeMode);
 
   }
 
   Future<void> changeLocale(Locale newLocale) async {
-    await storage.write(AppConstants.localeKey, newLocale.languageCode);
+    await storage.writeString(AppConstants.localeKey, newLocale.languageCode);
     Get.updateLocale(newLocale);
   }
 
