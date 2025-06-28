@@ -66,7 +66,7 @@ lib/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/flutter-customer-support.git
+git clone https://github.com/EiiiDOo/Ideas-And-Concepts-Assessment.git
 ```
 
 2. Install dependencies:
