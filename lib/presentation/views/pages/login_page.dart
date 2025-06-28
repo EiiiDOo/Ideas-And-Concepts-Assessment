@@ -23,7 +23,7 @@ class LoginScreen extends StatelessWidget {
                 AppConstants.user,
                 "here",
               );
-              await Get.toNamed(AppRoutes.customerServices);
+              await Get.offAllNamed(AppRoutes.customerServices);
             } else {
               showDialog(
                 context: context,

@@ -20,8 +20,7 @@ class SettingsController extends GetxController {
 
     final themeStr = storage.readString(AppConstants.themeModeKey);
     themeMode = _parseTheme(themeStr);
-    // Get.changeThemeMode(themeMode);
-
+    Get.changeThemeMode(themeMode);
   }
 
   Future<void> changeLocale(Locale newLocale) async {
