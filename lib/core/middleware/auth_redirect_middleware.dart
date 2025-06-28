@@ -10,8 +10,21 @@ class AuthRedirectMiddleware extends GetMiddleware {
   @override
   RouteSettings? redirect(String? route) {
     final user = localStorage.readString(AppConstants.user);
-    return user != null
-        ? RouteSettings(name: AppRoutes.customerServices)
-        : RouteSettings(name: AppRoutes.login);
+
+    final isLoggingIn = route == AppRoutes.login;
+
+    if (user == null && !isLoggingIn) {
+      // Not logged in → redirect to login
+      return const RouteSettings(name: AppRoutes.login);
+    }
+
+    if (user != null && isLoggingIn) {
+      // Already logged in → redirect to main app
+      return const RouteSettings(name: AppRoutes.customerServices);
+    }
+
+    // No redirect needed
+    return null;
   }
+
 }
