@@ -1,11 +1,11 @@
-class TranslationKeys {
+abstract class TranslationKeys {
   // Help & FAQ Screen
   static const helpAndFaqs = 'help_and_faqs';
   static const faq = 'faq';
   static const contactUs = 'contact_us';
   static const general = 'general';
   static const account = 'account';
-  static const services = 'services';
+  static const service = 'service';
   static const search = 'search';
 
   static const website = 'website';
